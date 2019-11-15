@@ -4,7 +4,7 @@
 # in code manually
 # 2. the zip file can contain whatever files, the scropt will extract and read its content
 # 3. the final content of zip file will b written in a txt file called 'final.txt'
-# 4. A cup of coffee for making me do this will be appretiated eshan... 
+# 4. A cup of coffee for making me do this will be appreciated eshan... 
 # Written on : 15th Nov, 2019
 
 from zipfile import ZipFile
