@@ -22,3 +22,4 @@ for fil in data:
 with open('final.txt', 'w') as f:
     for i in con: 
         f.write(i+' ')
+print('done')
