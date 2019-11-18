@@ -9,7 +9,6 @@
 # Modified: 18th Nov, 2019 - added Showing only redundant data
 from zipfile import ZipFile
 filename ='zipp.zip'
-
 with ZipFile(filename, 'r') as zip:
     zip.printdir()
     data = zip.namelist()
@@ -21,18 +20,17 @@ for fil in data:
     with open(fil,'r') as f:
         ele = f.read()
         con.append(ele)
-con2 = []
+con2 = [] # for cleaning and data processing 
 for ele in con:
     for element in ele.split('\n'):
         con2.append(element)
-d = {x:con2.count(x) for x in con2}
+d = {x:con2.count(x) for x in con2} # take the frequency of all the names
 final =[]
 for key, value in d.items():
-    if(value == 3):
+    if(value == len(data)): # print those names whose frequency is whatever the number of files present in zip
         final.append(key)
 
 with open('final.txt', 'w') as f:
     for i in final: 
-        f.write(i+' ')
-    
+        f.write(i+' ')  
 print('done')
