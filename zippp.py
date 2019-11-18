@@ -32,5 +32,6 @@ for key, value in d.items():
 
 with open('final.txt', 'w') as f:
     for i in final: 
+        print(i)
         f.write(i+' ')  
 print('done')
