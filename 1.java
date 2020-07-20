@@ -1,5 +1,19 @@
 import java.util.Scanner;
 
+/*
+4
+1020304017018019020
+*50607014015016
+**809012013
+***10011
+
+
+3
+10203010011012
+*4050809
+**607
+*/
+
 class Que1 {
     public static void main(String args[]) {
         Scanner sc = new Scanner(System.in);
@@ -9,8 +23,8 @@ class Que1 {
         String s = "";
 
         for (int i = n; i >= 1; --i) {
-            for (int k1 = i; k1 < n; k1++) { // prints space
-                // System.out.print("*");
+            for (int k1 = i; k1 < n; k1++) { // prints stars
+                
                 s += "*";
             }
 
